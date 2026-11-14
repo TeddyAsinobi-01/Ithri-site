@@ -22,7 +22,6 @@
   --tint-pineapple-juice:#ffe9a3;
   --tint-watermelon-juice:#ffd2d2;
   --tint-zobo-mix:#e9c6d2;
-  --tint-coconut-milk:#f4f0e2;
   --tint-coconut-water:#d3efe6;
 
   --radius:22px;
@@ -493,3 +492,13 @@ details p{margin:0;padding:0 24px 22px;color:var(--muted)}
 .hero .blob{display:none}
 .product-visual::before{display:none}
 .terms-intro{margin-bottom:34px}.terms-intro p{color:var(--muted);font-size:1.08rem;max-width:46em}
+.special-grid:has(.special-card:only-child){max-width:440px}
+
+/* new bottle photos are slimmer than the old mock-ups */
+.hero-stage .slide{width:108px}
+.hero-stage .slide.is-prev{--x:-210px}.hero-stage .slide.is-next{--x:210px}
+.story-visual .c1{margin-right:14px}.story-visual .c3{margin-left:14px}
+@media (max-width:620px){
+  .hero-stage .slide{width:86px}
+  .hero-stage .slide.is-prev{--x:-112px}.hero-stage .slide.is-next{--x:112px}
+}
